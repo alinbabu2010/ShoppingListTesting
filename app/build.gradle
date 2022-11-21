@@ -5,6 +5,7 @@ apply plugin: "androidx.navigation.safeargs.kotlin"
 apply plugin: 'dagger.hilt.android.plugin'
 
 android {
+    
     compileSdkVersion 33
 
     defaultConfig {
@@ -28,10 +29,17 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
+
     namespace 'com.sample.shoppinglist'
+
+    viewBinding {
+        enabled true
+    }
+
 }
 
 dependencies {
