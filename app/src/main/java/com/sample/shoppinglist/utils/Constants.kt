@@ -8,5 +8,7 @@ object Constants {
 
     const val DATABASE_NAME = "shopping_db"
     const val BASE_URL = "https://pixabay.com"
+    const val NETWORK_FAILURE = "Network error occurred. Please try later"
+    const val UNKNOWN_ERROR = "An error occurred. Please try later"
 
 }
