@@ -11,4 +11,7 @@ object Constants {
     const val NETWORK_FAILURE = "Network error occurred. Please try later"
     const val UNKNOWN_ERROR = "An error occurred. Please try later"
 
+    const val MAX_NAME_LENGTH = 20
+    const val MAX_PRICE_LENGTH = 10
+
 }
