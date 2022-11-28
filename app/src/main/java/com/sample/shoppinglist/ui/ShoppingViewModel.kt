@@ -9,13 +9,15 @@ import com.sample.shoppinglist.data.models.ImageResponse
 import com.sample.shoppinglist.data.models.Resource
 import com.sample.shoppinglist.data.repositories.ShoppingRepository
 import com.sample.shoppinglist.utils.Event
+import com.sample.shoppinglist.utils.UIString
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
 class ShoppingViewModel @Inject constructor(
-    private val repository: ShoppingRepository
+    private val repository: ShoppingRepository,
+    private val errorString: UIString
 ) : ViewModel() {
 
     val shoppingItems = repository.observeAllShoppingItems()
