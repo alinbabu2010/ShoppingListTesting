@@ -2,6 +2,8 @@ package com.sample.shoppinglist.di
 
 import com.sample.shoppinglist.data.repositories.DefaultShoppingRepository
 import com.sample.shoppinglist.data.repositories.ShoppingRepository
+import com.sample.shoppinglist.utils.ErrorString
+import com.sample.shoppinglist.utils.UIString
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -17,5 +19,10 @@ interface RepoModule {
     fun provideShoppingRepository(
         defaultShoppingRepository: DefaultShoppingRepository
     ): ShoppingRepository
+
+    @Binds
+    fun provideUIString(
+        errorString: ErrorString
+    ): UIString
 
 }
