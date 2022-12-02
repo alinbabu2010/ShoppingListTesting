@@ -8,5 +8,8 @@
     <string name="empty_filed_error">The fields must not be empty</string>
     <string name="max_name_error">The name of the item must not exceed %s characters</string>
     <string name="max_price_error">The price of the item must not exceed %s characters</string>
-    <string name="valid_amount_msg">Please enter a vallid amount</string>
+    <string name="valid_amount_msg">Please enter a valid amount</string>
+    <string name="added_item">Added shopping item</string>
+    <string name="unknown_error">An unknown error occurred</string>
+    <string name="no_images">No images found</string>
 </resources>
