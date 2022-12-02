@@ -9,11 +9,11 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.RequestManager
-import com.google.android.material.snackbar.Snackbar
 import com.sample.shoppinglist.R
 import com.sample.shoppinglist.data.models.Resource.Status.*
 import com.sample.shoppinglist.databinding.FragmentAddShoppingItemBinding
 import com.sample.shoppinglist.ui.viewModel.ShoppingViewModel
+import com.sample.shoppinglist.utils.showSnackBar
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -87,14 +87,6 @@ class AddShoppingItemFragment @Inject constructor(
             }
         }
 
-    }
-
-    private inline fun <reified T> showSnackBar(value: T) {
-        val message = when (T::class) {
-            Int::class -> getString(value as Int)
-            else -> value as String
-        }
-        Snackbar.make(binding.root, message, Snackbar.LENGTH_LONG).show()
     }
 
 }
