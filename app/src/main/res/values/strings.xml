@@ -12,4 +12,6 @@
     <string name="added_item">Added shopping item</string>
     <string name="unknown_error">An unknown error occurred</string>
     <string name="no_images">No images found</string>
+    <string name="delete_success_msg">Successfully deleted item</string>
+    <string name="undo">Undo</string>
 </resources>
