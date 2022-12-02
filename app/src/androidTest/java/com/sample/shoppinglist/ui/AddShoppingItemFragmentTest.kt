@@ -67,14 +67,14 @@ class AddShoppingItemFragmentTest {
 
     @Test
     fun checkViewModelCurImageUrlIsEmptyAfterBackPress() {
-        var shoppingViewModel: ShoppingViewModel? = null
+        val testViewModel = ShoppingViewModel(FakeShoppingRepository(), FakeErrorString())
         val navController = mock(NavController::class.java)
-        launchFragmentInHiltContainer<AddShoppingItemFragment> {
+        launchFragmentInHiltContainer<AddShoppingItemFragment>(fragmentFactory = fragmentFactory) {
             Navigation.setViewNavController(requireView(), navController)
-            shoppingViewModel = viewModel
+            viewModel = testViewModel
         }
         pressBack()
-        assertThat(shoppingViewModel?.currentImageUrl?.getOrAwaitValue()).isEmpty()
+        assertThat(testViewModel.currentImageUrl.getOrAwaitValue()).isEmpty()
     }
 
     @Test
