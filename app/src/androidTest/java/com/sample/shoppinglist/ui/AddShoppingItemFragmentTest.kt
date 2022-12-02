@@ -10,6 +10,9 @@ import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.filters.MediumTest
 import com.google.common.truth.Truth.assertThat
 import com.sample.shoppinglist.R
+import com.sample.shoppinglist.ui.fragments.AddShoppingItemFragment
+import com.sample.shoppinglist.ui.fragments.AddShoppingItemFragmentDirections
+import com.sample.shoppinglist.ui.viewModel.ShoppingViewModel
 import com.sample.shoppinglist.utils.getOrAwaitValue
 import com.sample.shoppinglist.utils.launchFragmentInHiltContainer
 import dagger.hilt.android.testing.HiltAndroidRule

@@ -7,6 +7,8 @@ import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.filters.MediumTest
 import com.sample.shoppinglist.R
+import com.sample.shoppinglist.ui.fragments.ShoppingFragment
+import com.sample.shoppinglist.ui.fragments.ShoppingFragmentDirections
 import com.sample.shoppinglist.utils.launchFragmentInHiltContainer
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest

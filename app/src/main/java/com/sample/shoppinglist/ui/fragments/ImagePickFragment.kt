@@ -1,4 +1,4 @@
-package com.sample.shoppinglist.ui
+package com.sample.shoppinglist.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.sample.shoppinglist.databinding.FragmentImagePickBinding
 import com.sample.shoppinglist.ui.adapters.ImageAdapter
+import com.sample.shoppinglist.ui.viewModel.ShoppingViewModel
 import com.sample.shoppinglist.utils.Constants.GRID_SPAN_COUNT
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject

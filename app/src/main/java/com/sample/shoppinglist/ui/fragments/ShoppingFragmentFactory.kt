@@ -1,4 +1,4 @@
-package com.sample.shoppinglist.ui
+package com.sample.shoppinglist.ui.fragments
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory

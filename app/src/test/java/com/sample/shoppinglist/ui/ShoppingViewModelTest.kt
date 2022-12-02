@@ -4,6 +4,7 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.google.common.truth.Truth.assertThat
 import com.sample.shoppinglist.data.models.Resource.Status
 import com.sample.shoppinglist.data.repositories.FakeShoppingRepository
+import com.sample.shoppinglist.ui.viewModel.ShoppingViewModel
 import com.sample.shoppinglist.utils.Constants
 import com.sample.shoppinglist.utils.FakeErrorString
 import com.sample.shoppinglist.utils.MainCoroutineRule

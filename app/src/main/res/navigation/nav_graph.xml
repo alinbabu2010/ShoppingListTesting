@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/shoppingFragment"
-        android:name="com.sample.shoppinglist.ui.ShoppingFragment"
+        android:name="com.sample.shoppinglist.ui.fragments.ShoppingFragment"
         android:label="ShoppingFragment">
         <action
             android:id="@+id/action_shoppingFragment_to_addShoppingItemFragment"
@@ -14,7 +14,7 @@
     </fragment>
     <fragment
         android:id="@+id/addShoppingItemFragment"
-        android:name="com.sample.shoppinglist.ui.AddShoppingItemFragment"
+        android:name="com.sample.shoppinglist.ui.fragments.AddShoppingItemFragment"
         android:label="AddShoppingItemFragment">
         <action
             android:id="@+id/action_addShoppingItemFragment_to_imagePickFragment"
@@ -22,6 +22,6 @@
     </fragment>
     <fragment
         android:id="@+id/imagePickFragment"
-        android:name="com.sample.shoppinglist.ui.ImagePickFragment"
+        android:name="com.sample.shoppinglist.ui.fragments.ImagePickFragment"
         android:label="ImagePickFragment" />
 </navigation>
