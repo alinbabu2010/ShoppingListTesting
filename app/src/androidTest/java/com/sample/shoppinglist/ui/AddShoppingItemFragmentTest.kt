@@ -94,7 +94,7 @@ class AddShoppingItemFragmentTest {
 
     private fun mockNavControllerWithFragment(): NavController {
         val navController = mock(NavController::class.java)
-        launchFragmentInHiltContainer<AddShoppingItemFragment> {
+        launchFragmentInHiltContainer<AddShoppingItemFragment>(fragmentFactory = fragmentFactory) {
             Navigation.setViewNavController(requireView(), navController)
         }
         return navController
