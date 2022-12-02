@@ -7,7 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.sample.shoppinglist.databinding.FragmentShoppingBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ShoppingFragment : Fragment() {
 
     private lateinit var binding: FragmentShoppingBinding
